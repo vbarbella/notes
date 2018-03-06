@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Loops</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<img src="https://media.giphy.com/media/I3vv5iyWzXh0A/giphy.gif" class="floatRight">
+</head>
+<body>
+<div class="main">
+
+ <h1>Loops and Looping</h1>
+ 	<p>Loops allow you to iterate code by telling the computer/browser how many times it should run a certain block of code.</p>
+
+ 	<p>Loops are useful because they let you save time and allow you to write significantly less code.</p>
+
+ 	<p>There are three major types of loops</p>
+
+ 	<ul>
+ 		<li>For Loop</li>
+ 		<li>While Loop</li>
+ 		<li>Do While Loop</li>
+ 	</ul>
+
+ 	<p>Each of the above loops accomplish essentially the same thing; improving code efficiently and preventing redundancy. </p>
+
+ 	<p>
+ 	Take into condieration, the following chunk of code featuring an if conditional...</p>
+
+ 	<textarea>
+ 	var noLoopInput = prompt("How many times do you want to loop between 1 and 3?");
+
+ 	if (noLoopInput == 1) {
+ 		console.log("Got it.");
+ 	} else if (noLoopInput == 3) {
+ 		console.log("Got it.");
+ 		console.log("Got it.");
+ 		console.log("Got it.");
+ 	} else {
+ 		console.log("Please pick a number between 1 and 3.");
+	}
+ 	</textarea>
+
+
+	<p>The if conditional above is very inefficient. It is self-limiting to the number 3, and does not take into account the user;s desire to sometimes loop or perform some action many more times.</p>
+
+	<p>Below is a for loop version of the above code that allows the user to loop as many times as they want.</p>
+
+	<textare>
+	var loopInput = prompt("How many times would you like to loop?");
+
+	for (var i = 0; i < loopInput; i++) {
+		console.log("Got it.");
+	}
+	</textarea>
+
+
+<h2>For Loops</h1>
+
+	<p>For loops are the most common type of loops in programming. The for loop is used to run a code block a certain number of times that is usually defined by the programmer or the user.</p>
+
+	<p>Below is a pseudo-code example of how to write for a loop that works for almost all languages.</p>
+
+	<textarea>
+	for [initialization]; [condition]; [iteration] {
+		[code block to perform an action];
+	}
+	</textarea>
+
+	<p>In the above for loop pseudo-code, the following components are present...</p>
+
+	<p>initialization = a blank variable created to tell the loop to start counting at a specified number. </p>
+
+	<p>condition = a situation for the loop to compare the initialization to. Usually the condition tells the loop how many times it should run.</p>
+
+	<p>iteration = by how many numbers the loop should count up or down using (ex. count up by 1s, count up by 3s, etc.)</p>
+
+	<p><span class="count-up"></span></p>
+	<p>Counting down...</p>
+	<p><span class="count-down"></span></p>
+	<p>Counting up by 10 to 100...</p>
+	<p><span class="count-by-ten"></span></p>
+
+<h1>Iterating through Arrays</h1>
+
+	<p>It is not normally possible to manipulate how an array is displayed without using loops to control the output.</p>
+
+	<p><span class="breakfast-array"></span></p>
+
+<h2>While Loops</h2>
+
+	<p>While loops state that while something is true, the loop will continue to run until that something is no longer true. Typically a while loop is used when you do not have a variable to set up to initialize.</p>
+
+	<textare>
+	while [condition] {
+	[do something while the above is true];
+	[iterator];
+}
+	</textarea>
+
+	<p>While loops are terminated or ended by using some kind of iterator inside of its code block. </p>
+	<p><span class="while-loop"></span></p>
+
+<h2>Do While Loop</h2>
+
+	<p>Do While Loops will always run at least once. They are a variable of the while loop, except they always execute first then evaluate or consider their condition.</p>
+
+	<textarea>
+		do {
+		[iterator];
+		[do something here];
+	} while [condition];
+	</textarea>
+
+	<p><span class="do-while-loop"></span></p>
+
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
