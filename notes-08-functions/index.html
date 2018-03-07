@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Functions</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+<div class="main">
+
+<h1>Functions in Javascript</h1>
+
+<p>Functions are valuable tools in all programming languages. They allow you to "encapsulate" code and create reusable chunks of code that do not automatically run when the program is opened or called.</p>
+
+<p>The most common way to create a function in Javascript is to us the "function" keyword...</p>
+
+<textarea>
+	function myFirstFunction() {
+		// Do something...
+	}
+</textarea>
+
+<p>Since functions are not run automatically with the program, in order to access a function, you have to "call" or "invoke" it. You invoke a function, by referencing it by name, like this...</p>
+
+<textarea>
+	myFirstFunction();
+</textarea>
+
+<p>Our first example of a working function...</p>
+<p class="function-1"></p>
+
+<h1>Global and Local Variables</h1>
+
+<p>Global and local variables or scope defines where in our code an element exists. A global element tends to exist outside of a function or object. Whereas a local element exists inside a function or object. Local elements do not run automatically with the program. they have to be invoked or specifically used first.</p>
+
+<p> In global scope, variables can be used by anything in our code, including all functions and objects.</p>
+
+<p>In local scope, variables can only be used by the function or objects that it's declared within.</p>
+
+<p class="scope-global"></p>
+<p class="scope-local"></p>
+
+<hr>
+<h2>Your Own Function</h2>
+
+<p>Write your own function that will output to a DOM element below called "my-function". Your function will output a single string that says "Welcome to my page." You may call your function whatever you want. </p>
+
+<h3 class="my-function"></h3>
+<hr>
+<h1>Passing Arguments Through Functions</h1>
+
+<p>When a function is created, right after its name and two parenthesis. Within these parenthesis, arguments can be passed to the function from an external source such as a global variable-or more likely, an element from within the DOM. Arguments allow us to take in external data or variables and operate on them within the function. Typically, after operating on the variables, you would pass them outside of the functuon using a "return".</p>
+
+</p>Below, we pass a set of arguments to a function that will return a result</p>
+
+ <p class="arguments-1"></p>
+
+<hr>
+<h2>Passing Your Own Arguments</h2>
+
+<p>In the space below, create a function that will take in two arguments and return the <em>modulus</em> or remainder of those two arguments. The DOM element should have a class of "my-mod", and the function should be called modCalculate().</p>
+
+ <h3 class="my-mod"></h3>
+<hr>
+
+<h1>Conditionals and Functions</h1>
+
+<p>When a function needs to evaluate the true or falseness of a statement, we need to write a conditional statement inside of that function. In essence, you can think of functions as mini programs that exist in your overall program.</p>
+
+<p>Below is a function return that uses an if-conditional inside of it...</p>
+
+<p class="conditional-1"></p>
+
+<h1>Loops, Forms and Functions</h1>
+
+<p>Functions, in web development, are often paired with front-end or DOM level forms. Where you often utilize a form in order to retrieve a value and use it to invoke or provide arguments for functuons.</p>
+
+<p>Loops, like variables, operations and conditional statements, can be run and written inside of functions as well.</p>
+
+<p>Below, we indicate how many loops we wish to have, and the function will return it...</p>
+
+<form>
+	<input type="text" class="user-amount">
+	<button class="user-submit" type="button" onclick="loopFunction();">Loop It</button>
+</form>
+
+<p>In the above form, the button contains a specialized arrribute called "onclick" that will expect a Javascript function. When clicked, that button will attempt to locate the function and run it.</p>
+
+<p>Below we see our loops</p>
+
+<p class="loop-it"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
