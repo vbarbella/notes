@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Objects and Prototypes</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+<div class="main">
+
+
+<h1>Objects in Javascript</h1>
+
+<p>Objects are essential to programming an OOP based app. Objects allow developers to "encapsulate" data inside a container. This container is often the object itself. Objects can be reused, modified or acted upon. They can be considered as mini-programs inside of a larger program.</p>
+
+<p>These objects are typically tasked with performing their own specific actions and duties by using object-specific variables and functions. Except, within an object a variable is called a property and a function is called a method. These components come together to make up the pieces and parts of an object.</p>
+
+<h1>Accessing Object Properties</h1>
+
+<p>Variables inside of Objects work exactly the same way as local variables inside of functions. Accessing an object property is helpful when you need to act upon it outside of the Object.</p>
+
+<hr>
+
+<h2><span class="my-house"></span></h2>
+<h2><span class="my-house-extras"></span></h2>
+<h2><span class="my-house-location"></span></h2>
+
+<hr>
+
+
+<h1>Different Ways to Create Objects</h1>
+
+<p>There are dozens of different ways to create objects. Each of these ways is called an "Object Creation Pattern". Each pattern tends to have a "best use" scenario.</p>
+
+<p>The object creation pattern we saw above in the "myHouse" object is called the "Literal Method". It is the easiest way to create a single object that does not need to spawn sub-objects/sub-classes.</p>
+
+<p>The following is an object created using the "Object Literal" pattern, which is a slight variation that allows for creating a simple object that holds static properties.</p>
+
+<p>Accessing the myPerson Object...</p>
+
+<hr>
+
+<h2><span class="my-person"></span></h2>
+
+<hr>
+
+<h3>The "this" Keyword</h3>
+
+<p>In OOP languages the "this" keyword is often used to reference the object without using its name. This is to allow programmers to write objects that share the same name as the parent object. The "this" keyword also allows your function/method to reference the object that it currently resides in.</p>
+
+<p>Anytime, you need to reference a property or another method while you are inside of an object, you should use the "this" keyword.</p>
+
+
+<hr>
+
+<h3>Creating an Object Using the Literal Method</h3>
+
+<p>The easiest way to create an object is the Literal Method. It uses colons to set property values and commas to separate different properties and methods.</p>
+
+<p>Below, we created an object called myCar and output its properties and results of its method...</p>
+<hr>
+
+<h2><span class="my-car"></span></h2>
+<hr>
+
+<p>The literal method can be used to create a single object without keywords and wihtout referencing the object's name each time we need to make a new property or method. </p>
+
+
+<h3>Creating an Object Using the Object Constructor Pattern</h3>
+
+<p>So far, the Literal Method and the Object Literal patterns have allowed us to create single objects. However, there are situatuon where you will want to create multiple objects from a single "prototype" object. One of the ways to create a prototype object is to use the Object Constructor Pattern.</p>
+
+<p>Below, we access the myFamily object, which was created using the Object Constructor Pattern...</p>
+<hr>
+<h2><span class ="family-1"></span></h2>
+<h2><span class ="family-2"></span></h2>
+<hr>
+<p>The Object Constructor Pattern creates a single object that we can use to spawn multiple sub-objects/sub-classes from. This allows us to re-use an object without having to create a new one from scratch each time.</p>
+
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
