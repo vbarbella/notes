@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
+
+body {
+	background: #ffccdc;
+	font-family: 'VT323', monospace;
+}
+
+textarea {
+	width: 100%;
+	height: 150px;
+	font-size: .9em;
+	font-family: 'VT323', monospace;
+	color: #ff89bc;
+}
+
+h1 {
+	color: #ff89bc;
+}
+
+h2 {
+	color: #ff89bc;
+}
+
+h3 {
+	color: #ff89bc;
+}
+
+a {
+	color: #ff89bc;
+}
+
+.main {
+	background: #ffccdc
+	padding: 2em;
+	
+
+}
