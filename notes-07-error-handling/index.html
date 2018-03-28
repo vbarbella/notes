@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Error Handling for Beginners</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="main">
+
+<h1>Error Handling</h1>
+
+<p>The first rule to error handling as a programmer is to understand it is never the browser or the computer's fault. It is always your fault.</p>
+
+<h1 class="h1-heading">Step 1: Check your File Links</h1>
+
+<p>The first step to resolving errors is to check your files and links to ensure that they are properly connected to your files and that they are in the right place</p>
+
+<p>In Brackets or Sublime Text, you need to ensure that you open the file folder instead of the individual files. Also in Sublime/Brackets, if you save a file or move a file after saving it, the program will create an old copy of your file prior to moving it. </p>
+
+<p>If you move your files around in your file folder. or move your files outside of your original file folder always make sure to close Sublime/Brackets then re-open the file folder in your code editor. Do NOT save before you close the code editor after moving your files.</p>
+
+<h1 class="h1-heading">Step 2: Check the Order That You are Linking Files</h1>
+
+<p>The order with which you link files matters. In HTML, CSS and JS, the file linked last will overwrite all files that come before it. This means that you should ensure that your custom CSS file and your custom JS file are linked after framework/library files such as bootstrap.css, normalize.css or jQuery Library.</p>
+
+<h1 class="h1-heading">Step 3: Weed Out Common Errors or Mistakes</h1>
+
+<p>The mast majority of beginner and experienced programmer mistakes are typos. Always check the following for typos or problems before attempting a more complex fix...</p>
+
+<ul>
+	<li>Check your file names, tag names, attribute names, values, etc. Are they spelled correctly? Is your code editor highlighting a certain chunk of code wrong?</li>
+	<li>Have you opened and closed your tags or code blocks properly?</li>
+	<li>Are you looking at the right file?</li>
+</ul>
+
+<h1 class="h1-heading">Step 4: Using the Console and Inspector in Your Browser</h1>
+
+<p>In Firefox and Chrome, you access the Console and Inspector by right-clicking on the screen and selecting "Inspect" or "Inspector".</p>
+
+<p>The Element Inspector is for HTML and CSS debugging. The Console is for javascript debugging.</p>
+
+<p class="output"><span class="js-error-1"></span></p>
+<hr>
+<h2>The Element Inspector</h2>
+
+	<p>The Element Inspector, used to debug HTML and CSS can be useful for finding or working with the following scenarios...</p>
+
+<ul>
+	<li>Testing properties and values to see immediate effects. </li>
+	<li>Finding specific classes or IDs used in order to change or modify an element.</li>
+	<li>Testing a selection/selector without modifying the original code files.</li>
+	<li>Toggling on or off properties and rules to determine changes or effects. </li>
+</ul>
+
+
+<h2>The Console</h2>
+
+<p>Javascript utilizes many of the browser's developer tools, the console is the simplest to use for debugging purposes.</p>
+
+<p>Usually, the console will attempt to find and flag errors that have to do with syntax or improper typing. It will not find everything wrong about a code file. If you find that your code is breaking at certain points, try using a console.log() method to see where your code happens to be breaking.</p>
+
+<p class="output"><span class="js-sum"></span></p>
+<hr>
+<h1 class="h1-heading">Step 5: Use Validators and/or JSHint</h1>
+
+<p>There are tools available online that will attempt to find and call out errors for you. They are not perfect and will not catch all errors, however, they can be helpful when you just can't find where the typo is occuring.</p>
+
+<ul>
+	<li><strong>HTML Validator:</strong> <a href="https://validator.w3.org" target="_blank">W3C HTML Validator </a></li>
+ <li><strong>CSS Validator:</strong> <a href="https://jigsaw.w3.org/css-validator/" target="_blank">W3C CSS Validator</a></li>
+ <li><strong>JS Hint:</strong> <a href="https://jshint.com/" target="_blank">JSHint</a></li>
+</ul>
+
+<h2>Step 6: Commenting Out Code</h2>
+
+<p>If Console and JSHint are unhelpful, you may wish to start commenting out the chunks of code that are giving you trouble. As you comment out the code, you may wish to comment large swathes to start, then slowly uncomment smaller bits of code until you find the area where the problem is occuring.</p>
+
+<h2>Step 7: Ask Somebody</h2>
+
+<p>The last ditch resort to fixing or debugging code is to ask someone else. Before you ask another human being, attempt to find someone who has already experienced your problem by using Google.</p>
+
+<p>If Google is unhelpful or if you cannot find the right search terms to use, try to ask someone else with some coding knowledge to look at your program. This can be someone you know or a coding help forum such as <a href="https://stackoverflow.com" target="_blank">StackOverflow</a> or <a href="https://reddit.com/r/learnjavascript/" target="_blank">r/learnjavascript</a></p>
+
+
+
+
+
+
+
+
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
